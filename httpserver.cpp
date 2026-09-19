@@ -13,7 +13,7 @@ int main() {
     }
 
     //Create a socket.
-
+    
     SOCKET server_fd = socket(AF_INET, SOCK_STREAM, 0);
     if (server_fd == INVALID_SOCKET) {
         std::cerr << "Failed to create socket: " << WSAGetLastError() << "\n";
